@@ -1,0 +1,39 @@
+============================================================
+INSIDER THREAT DETECTION DATASET - STATISTICAL REPORT
+============================================================
+
+DATASET OVERVIEW:
+--------------------
+UEBA Records: 36
+Network Logs: 39
+PAM Events: 31
+DLP Violations: 30
+Threat Scenarios: 30
+Malware Indicators: 36
+
+THREAT ANALYSIS:
+--------------------
+High Severity Threats: 13
+Medium Severity Threats: 12
+Low Severity Threats: 5
+Average Risk Score: 0.683
+Total Financial Impact: $725,000
+
+USER ANALYSIS:
+--------------------
+Unique Users: 10
+Most Active User: U001
+Highest Risk User: U004
+
+NETWORK ANALYSIS:
+--------------------
+Unique Source IPs: 15
+Unique Destination IPs: 35
+Total Data Transferred: 70,361,856 bytes
+High Severity Events: 11
+
+MALWARE ANALYSIS:
+--------------------
+High Impact Malware: 18
+Average Confidence Score: 0.817
+Unique Threat Families: 32
