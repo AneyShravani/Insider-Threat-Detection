@@ -146,5 +146,107 @@ def get_behavior():
 
     return jsonify(user_summary)
 
+
+#charts
+
+@app.route('/api/dashboard')
+def dashboard():
+    return jsonify({
+        "threat_severity": [
+            {"name": "High", "value": 43.3},
+            {"name": "Medium", "value": 40.0},
+            {"name": "Low", "value": 16.7}
+        ],
+        "detections_by_hour": [
+            {"hour": 8, "count": 4},
+            {"hour": 9, "count": 3},
+            {"hour": 10, "count": 5},
+            {"hour": 11, "count": 3},
+            {"hour": 12, "count": 3},
+            {"hour": 13, "count": 2},
+            {"hour": 14, "count": 3},
+            {"hour": 15, "count": 1},
+            {"hour": 16, "count": 3},
+            {"hour": 17, "count": 1}
+        ],
+        "dlp_violations": [
+            {"name": "High", "count": 14},
+            {"name": "Medium", "count": 10},
+            {"name": "Low", "count": 6}
+        ]
+    })
+
+@app.route('/api/threats')
+def threats():
+    return jsonify({
+        "top_threats": [
+            {"name": "data_exfiltration", "count": 1},
+            {"name": "privilege_abuse", "count": 1},
+            {"name": "code_theft", "count": 1},
+            {"name": "data_theft", "count": 1},
+            {"name": "payroll_fraud", "count": 1},
+            {"name": "normal_activity", "count": 1},
+            {"name": "research_misconduct", "count": 1},
+            {"name": "network_sabotage", "count": 1},
+            {"name": "legal_breach", "count": 1},
+            {"name": "competitive_intelligence", "count": 1}
+        ],
+        "network_protocols": [
+            {"name": "SMB", "value": 28.2},
+            {"name": "SSH", "value": 23.1},
+            {"name": "HTTPS", "value": 17.9},
+            {"name": "HTTP", "value": 10.3},
+            {"name": "MySQL", "value": 7.7},
+            {"name": "SMTP", "value": 5.1},
+            {"name": "DNS", "value": 2.6},
+            {"name": "IPP", "value": 2.6},
+            {"name": "RDP", "value": 2.6}
+        ]
+    })
+
+@app.route('/api/user-risk')
+def user_risk():
+    return jsonify({
+        "risky_users": [
+            {"user": "U006", "score": 0.55},
+            {"user": "U002", "score": 0.52},
+            {"user": "U007", "score": 0.50},
+            {"user": "U010", "score": 0.48},
+            {"user": "U003", "score": 0.45},
+            {"user": "U009", "score": 0.43},
+            {"user": "U001", "score": 0.40},
+            {"user": "U005", "score": 0.38},
+            {"user": "U004", "score": 0.35},
+            {"user": "U008", "score": 0.30}
+        ],
+        "pam_risk": [
+            {"name": "High", "value": 51.6},
+            {"name": "Medium", "value": 22.6},
+            {"name": "Low", "value": 25.8}
+        ]
+    })
+
+@app.route('/api/ml-analysis')
+def ml_analysis():
+    return jsonify({
+        "feature_importance": [
+            {"feature": "UEBA Risk", "score": 0.35},
+            {"feature": "Network Activity", "score": 0.25},
+            {"feature": "PAM Events", "score": 0.20},
+            {"feature": "DLP Violations", "score": 0.20}
+        ],
+        "malware_confidence": [
+            {"score": 0.60, "count": 1},
+            {"score": 0.65, "count": 1},
+            {"score": 0.70, "count": 3},
+            {"score": 0.75, "count": 4},
+            {"score": 0.80, "count": 4},
+            {"score": 0.85, "count": 6},
+            {"score": 0.90, "count": 4},
+            {"score": 0.95, "count": 4}
+        ]
+    })
+
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000)
