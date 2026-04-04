@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-export default function Users({ theme }) {
+export default function Users() {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
@@ -18,19 +18,18 @@ export default function Users({ theme }) {
   const styles = {
     page: {
       padding: 30,
-      background: theme === "dark" ? "#020617" : "#f1f5f9",
+      background: "#020617",
       minHeight: "100vh",
-      color: theme === "dark" ? "white" : "#020617"
+      color: "white"
     },
     card: (severity) => ({
-      background: theme === "dark" ? "#0f172a" : "#ffffff",
+      background: "#0f172a",
       border: `1px solid ${severityColor(severity)}40`,
       borderRadius: 12,
-      padding: 20,
-      boxShadow: theme === "light" ? "0 2px 8px rgba(0,0,0,0.1)" : "none"
+      padding: 20
     }),
     subText: {
-      color: theme === "dark" ? "#94a3b8" : "#475569"
+      color: "#94a3b8"
     }
   };
 
@@ -47,7 +46,7 @@ export default function Users({ theme }) {
       }}>
         {users.map((u, i) => (
           <div key={i} style={styles.card(u.severity)}>
-            
+
             {/* Header */}
             <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
               <h3 style={{ margin: 0 }}>👤 {u.user_id}</h3>
@@ -66,10 +65,10 @@ export default function Users({ theme }) {
 
             {/* Info */}
             <div style={{ marginTop: 12, fontSize: 14, ...styles.subText }}>
-              <p>🎯 <strong style={{ color: theme === "dark" ? "white" : "#020617" }}>Threat:</strong> {u.threat_type}</p>
-              <p>📊 <strong style={{ color: theme === "dark" ? "white" : "#020617" }}>Risk Score:</strong> {Math.round(u.risk_score * 100)}%</p>
-              <p>🔧 <strong style={{ color: theme === "dark" ? "white" : "#020617" }}>Mitigation:</strong> {u.mitigation}</p>
-              <p>✅ <strong style={{ color: theme === "dark" ? "white" : "#020617" }}>Outcome:</strong> {u.outcome}</p>
+              <p>🎯 <strong style={{ color: "white" }}>Threat:</strong> {u.threat_type}</p>
+              <p>📊 <strong style={{ color: "white" }}>Risk Score:</strong> {Math.round(u.risk_score * 100)}%</p>
+              <p>🔧 <strong style={{ color: "white" }}>Mitigation:</strong> {u.mitigation}</p>
+              <p>✅ <strong style={{ color: "white" }}>Outcome:</strong> {u.outcome}</p>
             </div>
 
           </div>

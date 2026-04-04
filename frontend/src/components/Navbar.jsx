@@ -1,19 +1,12 @@
 import { NavLink } from "react-router-dom";
 
-export default function Navbar({ theme, toggleTheme }) {
-  const isDark = theme === "dark";
-
-  const sidebarBg = isDark ? "#0f172a" : "#ffffff";
-  const borderColor = isDark ? "#1e293b" : "#e2e8f0";
-  const textColor = isDark ? "white" : "#020617";
-  const subText = "#64748b";
-
+export default function Navbar() {
   const linkStyle = ({ isActive }) => ({
-    color: isActive ? "#38bdf8" : (isDark ? "#94a3b8" : "#475569"),
+    color: isActive ? "#38bdf8" : "#94a3b8",
     textDecoration: "none",
     padding: "8px 16px",
     borderRadius: 8,
-    background: isActive ? (isDark ? "#1e293b" : "#e2e8f0") : "transparent",
+    background: isActive ? "#1e293b" : "transparent",
     fontWeight: isActive ? "bold" : "normal",
     fontSize: 14
   });
@@ -22,8 +15,8 @@ export default function Navbar({ theme, toggleTheme }) {
     <div style={{
       width: 220,
       minHeight: "100vh",
-      background: sidebarBg,
-      borderRight: `1px solid ${borderColor}`,
+      background: "#020617",
+      borderRight: "1px solid #1e293b",
       padding: "24px 12px",
       display: "flex",
       flexDirection: "column",
@@ -32,13 +25,13 @@ export default function Navbar({ theme, toggleTheme }) {
       top: 0,
       left: 0
     }}>
-      
+
       {/* Logo */}
       <div style={{ marginBottom: 24, padding: "0 16px" }}>
-        <div style={{ fontSize: 18, fontWeight: "bold", color: textColor }}>
+        <div style={{ fontSize: 18, fontWeight: "bold", color: "white" }}>
           🛡️ ThreatGuard
         </div>
-        <div style={{ fontSize: 11, color: subText, marginTop: 4 }}>
+        <div style={{ fontSize: 11, color: "#64748b", marginTop: 4 }}>
           Insider Threat Detection
         </div>
       </div>
@@ -50,22 +43,6 @@ export default function Navbar({ theme, toggleTheme }) {
       <NavLink to="/timeline" style={linkStyle}>📅 Timeline</NavLink>
       <NavLink to="/reports" style={linkStyle}>📄 Reports</NavLink>
       <NavLink to="/behavior" style={linkStyle}>📊 Behavior</NavLink>
-
-      {/* Theme Button */}
-      <button
-        onClick={toggleTheme}
-        style={{
-          marginTop: 20,
-          padding: "8px 12px",
-          borderRadius: 8,
-          border: "none",
-          cursor: "pointer",
-          background: isDark ? "#1e293b" : "#e2e8f0",
-          color: textColor
-        }}
-      >
-        {isDark ? "☀️ Light Mode" : "🌙 Dark Mode"}
-      </button>
 
       {/* Logout */}
       <div style={{ marginTop: "auto" }}>

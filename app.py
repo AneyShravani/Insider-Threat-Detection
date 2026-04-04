@@ -248,5 +248,85 @@ def ml_analysis():
     })
 
 
+@app.route('/api/behavior-charts')
+def behavior_charts():
+    return jsonify({
+        "ueba_activity": [
+            {"activity": "file_access", "count": 11},
+            {"activity": "login", "count": 10},
+            {"activity": "email_send", "count": 2},
+            {"activity": "usb_access", "count": 2},
+            {"activity": "cloud_upload", "count": 1},
+            {"activity": "printer_access", "count": 1},
+            {"activity": "git_push", "count": 1},
+            {"activity": "database_export", "count": 1}
+        ],
+        "malware_impact": [
+            {"level": "High", "count": 18},
+            {"level": "Medium", "count": 17},
+            {"level": "Low", "count": 1}
+        ]
+    })
+
+@app.route('/api/investigation-charts')
+def investigation_charts():
+    df = pd.read_csv('data/insider_threat_scenarios.csv')
+    df['response_time'] = df['response_time'].str.replace('_minutes','').str.replace('_minute','').astype(float)
+
+    # Risk Score vs Financial Impact
+    scatter = []
+    for _, row in df.iterrows():
+        scatter.append({
+            "risk_score": round(float(row['risk_score']), 2),
+            "financial_impact": int(row['financial_impact'])
+        })
+
+    return jsonify({
+        "scatter": scatter,
+        "correlation": [
+            {"feature": "ueba_avg_risk",   "ueba_avg_risk": 1.0,  "network_bytes": 0.22, "pam_events": 0.97, "dlp_violations": 0.84, "risk_score": 0.023},
+            {"feature": "network_bytes",   "ueba_avg_risk": 0.22, "network_bytes": 1.0,  "pam_events": 0.16, "dlp_violations": 0.16, "risk_score": 0.15},
+            {"feature": "pam_events",      "ueba_avg_risk": 0.97, "network_bytes": 0.16, "pam_events": 1.0,  "dlp_violations": 0.8,  "risk_score": 0.034},
+            {"feature": "dlp_violations",  "ueba_avg_risk": 0.84, "network_bytes": 0.16, "pam_events": 0.8,  "dlp_violations": 1.0,  "risk_score": -0.065},
+            {"feature": "risk_score",      "ueba_avg_risk": 0.023,"network_bytes": 0.15, "pam_events": 0.034,"dlp_violations": -0.065,"risk_score": 1.0}
+        ]
+    })
+
+@app.route('/api/report-charts')
+def report_charts():
+    df = pd.read_csv('data/insider_threat_scenarios.csv')
+
+    # Top 10 Financial Impact Scenarios
+    top_financial = df[['scenario_id', 'financial_impact']]\
+        .sort_values('financial_impact', ascending=False)\
+        .head(10)\
+        .rename(columns={'scenario_id': 'scenario', 'financial_impact': 'impact'})\
+        .to_dict(orient='records')
+
+    # Escalation Requirements
+    escalation = df['escalation_path'].value_counts().reset_index()
+    escalation.columns = ['name', 'value']
+    escalation_list = escalation.to_dict(orient='records')
+
+    # Top 10 Threat Types
+    threat_types = df['threat_type'].value_counts().reset_index()
+    threat_types.columns = ['threat', 'count']
+    threat_list = threat_types.head(10).to_dict(orient='records')
+
+    # Risk Score Distribution (buckets)
+    bins = [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
+    labels = ['0.2', '0.3', '0.4', '0.5', '0.6', '0.7', '0.8', '0.9']
+    df['risk_bucket'] = pd.cut(df['risk_score'], bins=bins, labels=labels, include_lowest=True)
+    risk_dist = df['risk_bucket'].value_counts().sort_index().reset_index()
+    risk_dist.columns = ['score', 'frequency']
+    risk_list = risk_dist.to_dict(orient='records')
+
+    return jsonify({
+        "top_financial": top_financial,
+        "escalation": escalation_list,
+        "threat_types": threat_list,
+        "risk_distribution": risk_list
+    })
+
 if __name__ == '__main__':
     app.run(debug=True, port=5000)

@@ -23,7 +23,8 @@ export default function Alerts() {
 
       {alerts.map((a, i) => (
         <div key={i} style={{
-          padding: 16, marginBottom: 10,
+          padding: 16,
+          marginBottom: 10,
           background: "#0f172a",
           borderLeft: `5px solid ${borderColor(a.severity)}`,
           borderRadius: 8
@@ -34,8 +35,10 @@ export default function Alerts() {
           <span style={{
             float: "right",
             background: borderColor(a.severity),
-            padding: "2px 12px", borderRadius: 20,
-            fontSize: 12, fontWeight: "bold"
+            padding: "2px 12px",
+            borderRadius: 20,
+            fontSize: 12,
+            fontWeight: "bold"
           }}>
             {a.severity?.toUpperCase()}
           </span>
