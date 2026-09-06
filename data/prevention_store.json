@@ -1,0 +1,1594 @@
+{
+  "blocked_users": [
+    {
+      "user_id": "U001",
+      "status": "blocked",
+      "reason": "Threat detected: web_upload_attempt",
+      "threat_level": "high",
+      "updated_at": "2026-09-06T03:57:22.703555+00:00"
+    },
+    {
+      "user_id": "U002",
+      "status": "restricted",
+      "reason": "Threat detected: privilege_abuse",
+      "threat_level": "medium",
+      "updated_at": "2026-09-06T03:42:16.822845+00:00"
+    },
+    {
+      "user_id": "U003",
+      "status": "blocked",
+      "reason": "Threat detected: code_theft",
+      "threat_level": "high",
+      "updated_at": "2026-09-06T03:42:16.839639+00:00"
+    },
+    {
+      "user_id": "U004",
+      "status": "blocked",
+      "reason": "Threat detected: data_theft",
+      "threat_level": "high",
+      "updated_at": "2026-09-06T03:43:37.994267+00:00"
+    },
+    {
+      "user_id": "U005",
+      "status": "blocked",
+      "reason": "Threat detected: device_compromise",
+      "threat_level": "high",
+      "updated_at": "2026-09-06T03:57:22.732158+00:00"
+    },
+    {
+      "user_id": "U007",
+      "status": "restricted",
+      "reason": "Threat detected: credential_theft",
+      "threat_level": "medium",
+      "updated_at": "2026-09-06T03:57:22.671389+00:00"
+    },
+    {
+      "user_id": "U008",
+      "status": "blocked",
+      "reason": "Threat detected: network_sabotage",
+      "threat_level": "high",
+      "updated_at": "2026-09-06T03:42:16.915644+00:00"
+    },
+    {
+      "user_id": "U009",
+      "status": "restricted",
+      "reason": "Threat detected: legal_breach",
+      "threat_level": "medium",
+      "updated_at": "2026-09-06T03:42:16.932991+00:00"
+    },
+    {
+      "user_id": "U010",
+      "status": "restricted",
+      "reason": "Threat detected: competitive_intelligence",
+      "threat_level": "medium",
+      "updated_at": "2026-09-06T03:42:16.950539+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "status": "restricted",
+      "reason": "Threat detected: remote_access_attempt",
+      "threat_level": "medium",
+      "updated_at": "2026-09-06T03:57:22.618892+00:00"
+    },
+    {
+      "user_id": "ATTACKER",
+      "status": "blocked",
+      "reason": "Threat detected: brute_force_attack",
+      "threat_level": "high",
+      "updated_at": "2026-09-06T03:42:16.979552+00:00"
+    },
+    {
+      "user_id": "U004+U009",
+      "status": "blocked",
+      "reason": "Threat detected: insider_collaboration",
+      "threat_level": "high",
+      "updated_at": "2026-09-06T03:42:17.043794+00:00"
+    },
+    {
+      "user_id": "U006",
+      "status": "restricted",
+      "reason": "Threat detected: cloud_misuse",
+      "threat_level": "medium",
+      "updated_at": "2026-09-06T03:42:17.087803+00:00"
+    },
+    {
+      "user_id": "U045",
+      "status": "blocked",
+      "reason": "Suspicious file transfer detected via usb",
+      "threat_level": "high",
+      "updated_at": "2026-09-06T03:43:24.300781+00:00"
+    }
+  ],
+  "prevention_logs": [
+    {
+      "user_id": "U001",
+      "file_or_action": "data_exfiltration",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: data_exfiltration",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:42:16.804214+00:00"
+    },
+    {
+      "user_id": "U002",
+      "file_or_action": "privilege_abuse",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: privilege_abuse",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:42:16.823934+00:00"
+    },
+    {
+      "user_id": "U003",
+      "file_or_action": "code_theft",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: code_theft",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:42:16.840923+00:00"
+    },
+    {
+      "user_id": "U004",
+      "file_or_action": "data_theft",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: data_theft",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:42:16.858663+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "payroll_fraud",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: payroll_fraud",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:42:16.876500+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "research_misconduct",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: research_misconduct",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:42:16.898364+00:00"
+    },
+    {
+      "user_id": "U008",
+      "file_or_action": "network_sabotage",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: network_sabotage",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:42:16.916953+00:00"
+    },
+    {
+      "user_id": "U009",
+      "file_or_action": "legal_breach",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: legal_breach",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:42:16.934301+00:00"
+    },
+    {
+      "user_id": "U010",
+      "file_or_action": "competitive_intelligence",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: competitive_intelligence",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:42:16.951910+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "malware_infection",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: malware_infection",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:42:16.966250+00:00"
+    },
+    {
+      "user_id": "ATTACKER",
+      "file_or_action": "brute_force_attack",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: brute_force_attack",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:42:16.980785+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "remote_access_attempt",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: remote_access_attempt",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:42:16.997211+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "data_hoarding",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: data_hoarding",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:42:17.018843+00:00"
+    },
+    {
+      "user_id": "U004+U009",
+      "file_or_action": "insider_collaboration",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: insider_collaboration",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:42:17.045871+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "credential_theft",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: credential_theft",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:42:17.066928+00:00"
+    },
+    {
+      "user_id": "U006",
+      "file_or_action": "cloud_misuse",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: cloud_misuse",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:42:17.089345+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "web_upload_attempt",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: web_upload_attempt",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:42:17.112286+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "device_compromise",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: device_compromise",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:42:17.132791+00:00"
+    },
+    {
+      "user_id": "U045",
+      "file_or_action": "customer_data.xlsx",
+      "method": "usb",
+      "threat_level": "high",
+      "reason": "Suspicious file transfer detected via usb",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:43:24.302608+00:00"
+    },
+    {
+      "user_id": "U004",
+      "file_or_action": null,
+      "method": null,
+      "threat_level": null,
+      "reason": "Verified false alarm",
+      "action_taken": "unblocked",
+      "admin_triggered": true,
+      "timestamp": "2026-09-06T03:43:30.097753+00:00"
+    },
+    {
+      "user_id": "U004",
+      "file_or_action": "data_theft",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: data_theft",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:43:37.996274+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "payroll_fraud",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: payroll_fraud",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:43:38.015205+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "research_misconduct",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: research_misconduct",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:43:38.034403+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "malware_infection",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: malware_infection",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:43:38.055509+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "remote_access_attempt",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: remote_access_attempt",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:43:38.072907+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "data_hoarding",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: data_hoarding",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:43:38.089606+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "credential_theft",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: credential_theft",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:43:38.112489+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "web_upload_attempt",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: web_upload_attempt",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:43:38.136712+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "device_compromise",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: device_compromise",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:43:38.155741+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "payroll_fraud",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: payroll_fraud",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:43:38.524248+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "research_misconduct",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: research_misconduct",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:43:38.544267+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "malware_infection",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: malware_infection",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:43:38.565971+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "remote_access_attempt",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: remote_access_attempt",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:43:38.586228+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "data_hoarding",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: data_hoarding",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:43:38.612986+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "credential_theft",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: credential_theft",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:43:38.647281+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "web_upload_attempt",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: web_upload_attempt",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:43:38.683867+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "device_compromise",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: device_compromise",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:43:38.719163+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "payroll_fraud",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: payroll_fraud",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:31.558983+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "research_misconduct",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: research_misconduct",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:31.578167+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "malware_infection",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: malware_infection",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:31.597837+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "remote_access_attempt",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: remote_access_attempt",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:31.613250+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "data_hoarding",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: data_hoarding",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:31.629428+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "credential_theft",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: credential_theft",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:31.650029+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "web_upload_attempt",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: web_upload_attempt",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:31.671270+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "device_compromise",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: device_compromise",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:31.687603+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "payroll_fraud",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: payroll_fraud",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:32.041919+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "research_misconduct",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: research_misconduct",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:32.059819+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "malware_infection",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: malware_infection",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:32.083664+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "remote_access_attempt",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: remote_access_attempt",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:32.100234+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "data_hoarding",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: data_hoarding",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:32.116306+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "credential_theft",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: credential_theft",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:32.138119+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "web_upload_attempt",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: web_upload_attempt",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:32.162735+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "device_compromise",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: device_compromise",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:32.186230+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "payroll_fraud",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: payroll_fraud",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:48.932061+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "research_misconduct",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: research_misconduct",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:48.954892+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "malware_infection",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: malware_infection",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:48.981917+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "remote_access_attempt",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: remote_access_attempt",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:49.004319+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "data_hoarding",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: data_hoarding",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:49.027238+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "credential_theft",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: credential_theft",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:49.055588+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "web_upload_attempt",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: web_upload_attempt",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:49.086893+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "device_compromise",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: device_compromise",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:49.107919+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "payroll_fraud",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: payroll_fraud",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:49.250138+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "research_misconduct",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: research_misconduct",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:49.274641+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "malware_infection",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: malware_infection",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:49.299179+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "remote_access_attempt",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: remote_access_attempt",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:49.318264+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "data_hoarding",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: data_hoarding",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:49.338667+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "credential_theft",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: credential_theft",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:49.374240+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "web_upload_attempt",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: web_upload_attempt",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:49.412121+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "device_compromise",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: device_compromise",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:47:49.439202+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "payroll_fraud",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: payroll_fraud",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:48:01.024973+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "research_misconduct",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: research_misconduct",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:48:01.049533+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "malware_infection",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: malware_infection",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:48:01.074170+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "remote_access_attempt",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: remote_access_attempt",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:48:01.091851+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "data_hoarding",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: data_hoarding",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:48:01.113868+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "credential_theft",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: credential_theft",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:48:01.151092+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "web_upload_attempt",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: web_upload_attempt",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:48:01.183124+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "device_compromise",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: device_compromise",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:48:01.210088+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "payroll_fraud",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: payroll_fraud",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:48:01.337061+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "research_misconduct",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: research_misconduct",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:48:01.357381+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "malware_infection",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: malware_infection",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:48:01.384568+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "remote_access_attempt",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: remote_access_attempt",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:48:01.406430+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "data_hoarding",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: data_hoarding",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:48:01.427787+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "credential_theft",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: credential_theft",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:48:01.457338+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "web_upload_attempt",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: web_upload_attempt",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:48:01.486059+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "device_compromise",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: device_compromise",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:48:01.512991+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "payroll_fraud",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: payroll_fraud",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:52:29.772009+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "research_misconduct",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: research_misconduct",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:52:29.792686+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "malware_infection",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: malware_infection",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:52:29.816517+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "remote_access_attempt",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: remote_access_attempt",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:52:29.836504+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "data_hoarding",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: data_hoarding",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:52:29.855922+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "credential_theft",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: credential_theft",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:52:29.877274+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "web_upload_attempt",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: web_upload_attempt",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:52:29.901189+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "device_compromise",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: device_compromise",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:52:29.923994+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "payroll_fraud",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: payroll_fraud",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:52:33.387236+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "research_misconduct",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: research_misconduct",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:52:33.409128+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "malware_infection",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: malware_infection",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:52:33.434146+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "remote_access_attempt",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: remote_access_attempt",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:52:33.453910+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "data_hoarding",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: data_hoarding",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:52:33.481252+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "credential_theft",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: credential_theft",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:52:33.507574+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "web_upload_attempt",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: web_upload_attempt",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:52:33.533639+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "device_compromise",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: device_compromise",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:52:33.554247+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "payroll_fraud",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: payroll_fraud",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:43.981553+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "research_misconduct",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: research_misconduct",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:44.006553+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "malware_infection",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: malware_infection",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:44.046126+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "remote_access_attempt",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: remote_access_attempt",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:44.070580+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "data_hoarding",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: data_hoarding",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:44.091100+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "credential_theft",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: credential_theft",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:44.114762+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "web_upload_attempt",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: web_upload_attempt",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:44.139536+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "device_compromise",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: device_compromise",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:44.160001+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "payroll_fraud",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: payroll_fraud",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:46.378739+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "research_misconduct",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: research_misconduct",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:46.400093+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "malware_infection",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: malware_infection",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:46.425599+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "remote_access_attempt",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: remote_access_attempt",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:46.449404+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "data_hoarding",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: data_hoarding",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:46.473127+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "credential_theft",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: credential_theft",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:46.498013+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "web_upload_attempt",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: web_upload_attempt",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:46.526606+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "device_compromise",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: device_compromise",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:46.548909+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "payroll_fraud",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: payroll_fraud",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:47.954862+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "research_misconduct",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: research_misconduct",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:47.976468+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "malware_infection",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: malware_infection",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:48.007026+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "remote_access_attempt",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: remote_access_attempt",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:48.027184+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "data_hoarding",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: data_hoarding",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:48.046360+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "credential_theft",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: credential_theft",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:48.069828+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "web_upload_attempt",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: web_upload_attempt",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:48.096279+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "device_compromise",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: device_compromise",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:48.119702+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "payroll_fraud",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: payroll_fraud",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:49.730787+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "research_misconduct",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: research_misconduct",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:49.755518+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "malware_infection",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: malware_infection",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:49.784332+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "remote_access_attempt",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: remote_access_attempt",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:49.805225+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "data_hoarding",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: data_hoarding",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:49.825085+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "credential_theft",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: credential_theft",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:49.851399+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "web_upload_attempt",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: web_upload_attempt",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:49.879644+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "device_compromise",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: device_compromise",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:55:49.907676+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "payroll_fraud",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: payroll_fraud",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:57:21.959838+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "research_misconduct",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: research_misconduct",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:57:21.987197+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "malware_infection",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: malware_infection",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:57:22.023274+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "remote_access_attempt",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: remote_access_attempt",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:57:22.047685+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "data_hoarding",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: data_hoarding",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:57:22.081503+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "credential_theft",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: credential_theft",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:57:22.120697+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "web_upload_attempt",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: web_upload_attempt",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:57:22.153634+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "device_compromise",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: device_compromise",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:57:22.177773+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "payroll_fraud",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: payroll_fraud",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:57:22.542594+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "research_misconduct",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: research_misconduct",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:57:22.567075+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "malware_infection",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: malware_infection",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:57:22.597747+00:00"
+    },
+    {
+      "user_id": "UNKNOWN",
+      "file_or_action": "remote_access_attempt",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: remote_access_attempt",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:57:22.622589+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "data_hoarding",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: data_hoarding",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:57:22.646783+00:00"
+    },
+    {
+      "user_id": "U007",
+      "file_or_action": "credential_theft",
+      "method": null,
+      "threat_level": "medium",
+      "reason": "Threat detected: credential_theft",
+      "action_taken": "restricted",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:57:22.675041+00:00"
+    },
+    {
+      "user_id": "U001",
+      "file_or_action": "web_upload_attempt",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: web_upload_attempt",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:57:22.708010+00:00"
+    },
+    {
+      "user_id": "U005",
+      "file_or_action": "device_compromise",
+      "method": null,
+      "threat_level": "high",
+      "reason": "Threat detected: device_compromise",
+      "action_taken": "blocked",
+      "admin_triggered": false,
+      "timestamp": "2026-09-06T03:57:22.735821+00:00"
+    }
+  ]
+}

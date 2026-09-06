@@ -9,6 +9,8 @@ import Investigation from "./pages/Investigation";
 import Timeline from "./pages/Timeline";
 import Reports from "./pages/Reports";
 import Behavior from "./pages/Behavior";
+import FalseNegatives from "./pages/FalseNegatives";
+import Prevention from "./pages/Prevention";
 
 function Layout() {
   const location = useLocation();
@@ -33,6 +35,8 @@ function Layout() {
           <Route path="/timeline" element={<Timeline />} />
           <Route path="/reports" element={<Reports />} />
           <Route path="/behavior" element={<Behavior />} />
+          <Route path="/false-negatives" element={<FalseNegatives />} />
+          <Route path="/prevention" element={<Prevention />} />
         </Routes>
       </div>
     </div>

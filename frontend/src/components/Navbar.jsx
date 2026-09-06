@@ -43,6 +43,8 @@ export default function Navbar() {
       <NavLink to="/timeline" style={linkStyle}>📅 Timeline</NavLink>
       <NavLink to="/reports" style={linkStyle}>📄 Reports</NavLink>
       <NavLink to="/behavior" style={linkStyle}>📊 Behavior</NavLink>
+      <NavLink to="/false-negatives" style={linkStyle}>🛡️ False Negatives</NavLink>
+      <NavLink to="/prevention" style={linkStyle}>🛑 Prevention</NavLink>
 
       {/* Logout */}
       <div style={{ marginTop: "auto" }}>
