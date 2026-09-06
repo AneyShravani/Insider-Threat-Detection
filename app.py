@@ -5,8 +5,15 @@ from flask_cors import CORS
 import joblib
 import pandas as pd
 
+from prevention.routes import prevention_bp
+
 app = Flask(__name__)
 CORS(app)
+
+model = joblib.load('model/threat_model.pkl')
+le    = joblib.load('model/label_encoder.pkl')
+
+app.register_blueprint(prevention_bp)
 
 model = joblib.load('model/threat_model.pkl')
 le    = joblib.load('model/label_encoder.pkl')
